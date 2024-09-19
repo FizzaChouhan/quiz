@@ -1,0 +1,99 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(135deg, #f2f6ff 0%, #cfd9df 100%);
+}
+
+/* Center the quiz box */
+#quizContainer {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Style the question */
+#questionBox p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Ensure options are block elements and stacked vertically */
+#optionBox {
+    display: block;
+    text-align: left;
+}
+
+/* Style each option label */
+#optionBox label {
+    display: block;
+    background-color: #e8f5e9;
+    border: 2px solid #a5d6a7;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Bigger radio button */
+#optionBox input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.5);
+}
+
+/* Hover effect for labels */
+#optionBox label:hover {
+    background-color: #a5d6a7;
+}
+
+/* Style the Next button */
+#nextBtn {
+    padding: 12px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Next button hover effect */
+#nextBtn:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    #quizContainer {
+        padding: 20px;
+        width: 90%;
+    }
+
+    #nextBtn {
+        font-size: 16px;
+    }
+
+    #questionBox p {
+        font-size: 20px;
+    }
+}
